@@ -1,0 +1,124 @@
+
+/* Main page background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2, #6dd5ed);
+  min-height: 100vh;
+}
+
+/* Main container */
+.container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background: linear-gradient(145deg, #ffffff, #f0f4ff);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Main heading */
+h1 {
+  text-align: center;
+  background: linear-gradient(90deg, #2563eb, #9333ea, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 30px;
+}
+
+/* Section headings */
+h2 {
+  color: #4f46e5;
+  margin-top: 25px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+/* All buttons */
+button {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(124, 58, 237, 0.3);
+}
+
+/* Navigation buttons */
+nav button {
+  flex: 1;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 2px solid #dbeafe;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Input focus effect */
+input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 8px rgba(124, 58, 237, 0.25);
+}
+
+/* Student information cards */
+.result {
+  margin-top: 15px;
+  padding: 18px;
+  background: linear-gradient(135deg, #dbeafe, #ede9fe, #fce7f3);
+  border-left: 6px solid #7c3aed;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Student information text */
+.result p {
+  color: #312e81;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .container {
+    margin: 12px;
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
